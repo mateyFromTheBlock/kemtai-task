@@ -31,7 +31,7 @@ const ExerciseLogo = ({ img, title, lengthText, onClick, selected }) => {
   const classes = useStyles();
   return (
     <div
-      onClick={onClick}
+      onMouseUp={onClick}
       role="button"
       tabIndex={0}
       className={classes.divContainer}
