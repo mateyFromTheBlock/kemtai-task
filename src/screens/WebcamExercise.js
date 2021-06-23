@@ -11,7 +11,7 @@ const { innerWidth: width, innerHeight: height } = window;
 
 const aspectRatio = height < width ? height / width : width / height;
 const videoConstraints = {
-  aspectRatio,
+  aspectRatio: width / height,
 };
 
 const EXERCISE_DURATION = 60; // seconds
