@@ -1,5 +1,18 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'), url(./fonts/Gilroy-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold'), url(./fonts/Gilroy-ExtraBold.otf) format('opentype');
+}
+
 .App {
+  width: 100%;
+  height: 100%;
   text-align: center;
+  font-family: "Gilroy";
 }
 
 .App-logo {
