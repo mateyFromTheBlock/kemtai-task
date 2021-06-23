@@ -10,7 +10,7 @@ import data from '../data/data.json';
 const { innerWidth: width, innerHeight: height } = window;
 
 const videoConstraints = {
-  aspectRatio: width / height,
+  aspectRatio: height / width,
 };
 
 const EXERCISE_DURATION = 60; // seconds
