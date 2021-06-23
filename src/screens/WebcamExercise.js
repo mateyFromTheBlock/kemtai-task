@@ -9,7 +9,6 @@ import data from '../data/data.json';
 // eslint-disable-next-line no-undef
 const { innerWidth: width, innerHeight: height } = window;
 
-const aspectRatio = height < width ? height / width : width / height;
 const videoConstraints = {
   aspectRatio: width / height,
 };
