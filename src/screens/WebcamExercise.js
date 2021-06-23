@@ -10,7 +10,6 @@ import data from '../data/data.json';
 const { innerWidth: width, innerHeight: height } = window;
 
 const aspectRatio = height < width ? height / width : width / height;
-console.log({ width, height });
 const videoConstraints = {
   aspectRatio,
 };
