@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 
-const { innerWidth: width } = window;
+// eslint-disable-next-line no-undef
+const { innerWidth: width, document } = window;
 
 const Circle = ({ id, radius, color, angle, className, xPos, yPos, sAngle }) => {
   const idRef = useRef(id);
   useEffect(() => {
-    const c = window.document.getElementById(id);
+    const c = document.getElementById(id);
     const ctx = c.getContext('2d');
     ctx.beginPath();
     ctx.moveTo(xPos, yPos);
