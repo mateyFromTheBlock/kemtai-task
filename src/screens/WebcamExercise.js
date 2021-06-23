@@ -6,6 +6,7 @@ import Circle from '../components/Circle';
 import ScoreFooter from '../components/ScoreFooter';
 import data from '../data/data.json';
 
+// eslint-disable-next-line no-undef
 const { innerWidth: width, innerHeight: height } = window;
 
 const videoConstraints = {
@@ -46,7 +47,7 @@ const WebcamExercise = ({ history }) => {
   useEffect(() => {
     if (!isCameraAllowed) return;
 
-    setInterval(function () {
+    setInterval(() => {
       setCounter((c) => c + 1);
     }, 1000);
   }, [isCameraAllowed]);
