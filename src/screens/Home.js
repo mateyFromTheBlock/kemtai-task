@@ -30,8 +30,6 @@ const Home = ({ history }) => {
       justify="space-evenly"
       alignItems="center"
       style={{ backgroundColor: '#222229', height: '100vh', width: '100%' }}
-      xl={4}
-      sm={12}
     >
       <img
         alt="title"
